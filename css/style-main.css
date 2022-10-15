@@ -8120,10 +8120,6 @@ body.tm-container-100pr .container-fluid {
 
 .tm-boxed-layout {
     background-color: #444;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .tm-boxed-layout.layer-overlay:before {
@@ -23961,7 +23957,7 @@ footer#footer {
 }
 
 .contact-info .phone-number {
-    line-height: 5px;
+    line-height: 22px;
     color: #fff;
     font-weight: 600;
 }
