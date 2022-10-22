@@ -128,7 +128,7 @@
                                 <nav id="top-primary-nav" class="menuzord green" data-effect="fade"
                                      data-animation="none" data-align="right">
                                     <ul id="main-nav" class="menuzord-menu onepage-nav">
-                                        <li><a href="#">公司簡介</a></li>
+                                        <li><a href="index.html#company-profile">公司簡介</a></li>
                                         <li><a href="#">申請流程</a></li>
                                         <li><a href="apply.php">即時申請</a></li>
                                         <li><a href="faq.php">常見問題</a></li>
@@ -367,7 +367,8 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="footer-paragraph text-center text-xl-end text-lg-end text-md-end">
-                                潤拓財務有限公司 : 公司簡介 | 申請流程 |
+                                潤拓財務有限公司 :
+                                <a href="index.html#company-profile" style="text-decoration: none;color: #91abc4">公司簡介</a> | 申請流程 |
                                 <a href="apply.php" style="text-decoration: none;color: #91abc4">即時申請</a> |
                                 <a href="faq.php" style="text-decoration: none;color: #91abc4">常見問題</a> |
                                 <a href="contact.php" style="text-decoration: none;color: #91abc4">聯絡方法</a>
