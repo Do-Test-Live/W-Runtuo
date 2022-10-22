@@ -9,11 +9,11 @@ class DBController {
     private $conn;
 
     function __construct() {
-        if($_SERVER['SERVER_NAME']=="nirmanad.org"||$_SERVER['SERVER_NAME']=="www.nirmanad.org"){
-            $this->host = "premium11";
-            $this->user = "biplgmwr_nirman";
-            $this->password = "JA#8i9rYhH)f";
-            $this->database = "biplgmwr_nirman";
+        if($_SERVER['SERVER_NAME']=="runtuo.nftprj.com"||$_SERVER['SERVER_NAME']=="www.runtuo.nftprj.com"){
+            $this->host = "localhost";
+            $this->user = "u727820269_loan_calculato";
+            $this->password = "hYfLi*d;u:H8";
+            $this->database = "u727820269_loan_calculato";
         }
 
         $this->conn = $this->connectDB();
