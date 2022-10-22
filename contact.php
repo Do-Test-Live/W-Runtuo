@@ -53,22 +53,6 @@
     <script src="js/revolution-slider/js/rs6.min.js"></script>
     <script src="js/revolution-slider/extra-rev-slider1.js"></script>
 
-    <script type="text/javascript">
-        function calculate() {
-            let rate = document.getElementById('monthly_flat').value;
-            if (parseInt(rate) === 0) {
-                rate = 2.8;
-            }
-            let a = document.getElementById('loan_amount').value;
-            let b = document.getElementById('repayment_period').value;
-            let c = parseInt(a) * (rate / 100);
-            c = c + parseInt(a) / b;
-            c = Math.round(c);
-            document.getElementById('reference_repayment_amount').value = c;
-        }
-    </script>
-
-
 </head>
 <body class="tm-container-1300px has-side-panel side-panel-right tm-boxed-layout layer-overlay overlay-dark-9"
       data-tm-bg-img="images/bg/bg2.jpg">
@@ -173,156 +157,160 @@
 
     <!-- Start main-content -->
     <div class="main-content-area">
-        <!-- Section: home Start -->
-        <section id="home">
-            <div class="container pt-5 pb-5">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <form method="post" action="insert.php">
-                                    <h1 class="mb-3">即時申請</h1>
-                                    <div class="row">
-                                        <div class="col-lg-6 mb-3">
-                                            <label class="form-label">中文姓名</label>
-                                            <input type="text" class="form-control" name="c_name" placeholder="黃金強"
-                                                   required>
-                                        </div>
-                                        <div class="col-lg-6 mb-3">
-                                            <label class="form-label">英文姓名(須與身份証相同)</label>
-                                            <input type="text" class="form-control" name="e_name"
-                                                   placeholder="Wong Kam Keung" required>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">身份証號碼 </label>
-                                            <input type="text" class="form-control" name="identy_num"
-                                                   placeholder="A1234xx(x)" required>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">性別 </label>
-                                            <select class="form-select" name="gender" required>
-                                                <option selected>Choose..</option>
-                                                <option value="男">男</option>
-                                                <option value="女">女</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">出生日期 (YYYY-MM-DD) </label>
-                                            <input type="text" class="form-control" name="dob" placeholder="1980-12-20"
-                                                   required>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">聯絡電話</label>
-                                            <input type="text" class="form-control" name="contact_num"
-                                                   placeholder="98880888" required>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">出糧方式</label>
-                                            <select class="form-select" name="pay_method" required>
-                                                <option selected>Choose..</option>
-                                                <option value="Automatic transfer">自動轉賬</option>
-                                                <option value="Cheque">支票</option>
-                                                <option value="Cash">現金</option>
-                                                <option value="No income">沒有收入</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">申請人</label>
-                                            <select class="form-select" name="applicant_type" required>
-                                                <option selected>Choose..</option>
-                                                <option value="New application client">新申請客戶</option>
-                                                <option value="Existing customers">現有客戶</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">貸款額度 (HK$)</label>
-                                            <input type="number" class="form-control" name="loan_amount"
-                                                   placeholder="100000" required>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">其他資料</label>
-                                            <textarea class="form-control" rows="3" name="other_info"
-                                                      placeholder="如指定聯絡時間" required></textarea>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <label class="form-label">什麼時間最方便聯絡: </label>
-                                            <select class="form-select" name="contact_time" required>
-                                                <option selected>Choose..</option>
-                                                <option value="上午 10 至 12 時">上午 10 至 12 時</option>
-                                                <option value="下午 12 至 2 時">下午 12 至 2 時</option>
-                                                <option value="下午 2 至 6 時">下午 2 至 6 時</option>
-                                                <option value="晚上 6 至 10 時">晚上 6 至 10 時</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-12 mb-3">
-                                            <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1"
-                                                       required>
-                                                <label class="form-check-label" for="exampleCheck1">
-                                                    本人申請時確認年滿18歲或以上，同意放債人條例及個人資料收集聲明。
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <button type="submit" class="btn btn-theme-colored1 d-grid w-100"
-                                                    name="loanApply">立即申請
-                                            </button>
-                                        </div>
-                                        <div class="col-6">
-                                            <a href="index.php" class="btn btn-theme-colored2 d-grid w-100">重置</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-lg-4 ">
-                                <div class="card bg-theme-colored1 text-center p-30 mb-0 text-white">
-                                    <div>
-                                        <h1>理財計算機</h1>
-                                        <p>
-                                            我們可即使為你計算出還款額度。
-                                        </p>
-                                        <p>
-                                            我們以月平息計算。定息定本，一目了然！
-                                        </p>
-                                    </div>
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="loan_amount" class="form-label">貸款額 <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" id="loan_amount"
-                                                   placeholder="HK$10,000" onkeyup="calculate()"
-                                                   onkeydown="calculate()">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="repayment_period" class="form-label">還款期數 <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" id="repayment_period" min="4"
-                                                   max="24"
-                                                   onkeyup="calculate()" onkeydown="calculate()" placeholder="12">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="monthly_flat" class="form-label">月平息 %</label>
-                                            <input type="text" class="form-control" id="monthly_flat"
-                                                   onkeyup="calculate()"
-                                                   onkeydown="calculate()" placeholder="2.8">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="repayment_period" class="form-label">參考還款額</label>
-                                            <input type="text" class="form-control" id="reference_repayment_amount"
-                                                   placeholder="HK$1113" readonly>
-                                            <p>
-                                                <span class="text-danger">*</span> 貸款計算機所顯示之利率僅供參考，一切貸款申請利率均以最後批核為準。
-                                            </p>
-                                        </div>
-                                    </form>
+        <!-- Section: Coontact -->
+        <section id="contact" class="divider">
+            <div class="container">
+                <div class="row pt-30">
+                    <div class="col-lg-4">
+                        <div class="icon-box icon-left iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate bg-white-f1 p-30 mb-30">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-wrapper">
+                                    <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
+                                            class="flaticon-contact-045-call"></i> </a>
                                 </div>
+                                <div class="icon-text">
+                                    <h5 class="icon-box-title mt-0">Phone</h5>
+                                    <div class="content"><a href="tel:85226285678">+852 2628-5678</a></div>
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
                         </div>
+                        <div class="icon-box icon-left iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate bg-white-f1 p-30 mb-30">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-wrapper">
+                                    <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
+                                            class="flaticon-contact-009-phone-3"></i> </a>
+                                </div>
+                                <div class="icon-text">
+                                    <h5 class="icon-box-title mt-0">Fax</h5>
+                                    <div class="content">2162-5678</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="icon-box icon-left iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate bg-white-f1 p-30 mb-30">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-wrapper">
+                                    <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
+                                            class="flaticon-contact-043-email-1"></i> </a>
+                                </div>
+                                <div class="icon-text">
+                                    <h5 class="icon-box-title mt-0">Email</h5>
+                                    <div class="content"><a href="mailto:info@runtuo.hk">info@runtuo.hk</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="icon-box icon-left iconbox-centered-in-responsive iconbox-theme-colored1 animate-icon-on-hover animate-icon-rotate bg-white-f1 p-30 mb-30">
+                            <div class="icon-box-wrapper">
+                                <div class="icon-wrapper">
+                                    <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
+                                            class="flaticon-contact-037-address"></i> </a>
+                                </div>
+                                <div class="icon-text">
+                                    <h5 class="icon-box-title mt-0">Address</h5>
+                                    <div class="content">九龍旺角彌敦道555號九龍行16樓1603室
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <h2 class="mt-0 mb-4">聯絡我們</h2>
+                        <h6 class="mt-0 mb-4">潤拓財務有限公司</h6>
+                        <!-- Contact Form -->
+                        <form id="contact_form" name="contact_form" class=""
+                              action="#"
+                              method="post">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="mb-3">
+                                        <label>你的姓名 <small>*</small></label>
+                                        <input name="name" class="form-control" type="text"
+                                               placeholder="你的姓名">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mb-3">
+                                        <label>聯絡電郵<small>*</small></label>
+                                        <input name="form_email" class="form-control required email" type="email"
+                                               placeholder="聯絡電郵">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="mb-3">
+                                        <label>聯絡電話<small>*</small></label>
+                                        <input name="form_subject" class="form-control required" type="text"
+                                               placeholder="聯絡電話">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label>查詢內容</label>
+                                <textarea name="form_message" class="form-control required" rows="5"
+                                          placeholder="查詢內容"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <input name="form_botcheck" class="form-control" type="hidden" value=""/>
+                                <button type="submit"
+                                        class="btn btn-flat btn-theme-colored1 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px"
+                                        data-loading-text="Please wait...">送出
+                                </button>
+                                <button type="reset"
+                                        class="btn btn-flat btn-theme-colored3 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">
+                                    重置
+                                </button>
+                            </div>
+                        </form>
+                        <!-- Contact Form Validation-->
+                        <script>
+                            (function ($) {
+                                $("#contact_form").validate({
+                                    submitHandler: function (form) {
+                                        var form_btn = $(form).find('button[type="submit"]');
+                                        var form_result_div = '#form-result';
+                                        $(form_result_div).remove();
+                                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                                        var form_btn_old_msg = form_btn.html();
+                                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                                        $(form).ajaxSubmit({
+                                            dataType: 'json',
+                                            success: function (data) {
+                                                if (data.status == 'true') {
+                                                    $(form).find('.form-control').val('');
+                                                }
+                                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                                $(form_result_div).html(data.message).fadeIn('slow');
+                                                setTimeout(function () {
+                                                    $(form_result_div).fadeOut('slow')
+                                                }, 6000);
+                                            }
+                                        });
+                                    }
+                                });
+                            })(jQuery);
+                        </script>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Section: home End -->
+
+        <!-- Divider: Google Map -->
+        <section>
+            <div class="pt-0 pb-0">
+                <div class="row">
+                    <!-- Google Map HTML Codes -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14764.176765944974!2d114.1701775!3d22.3141684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x375bdc34a0241c22!2sKowloon%20Building!5e0!3m2!1sen!2sbd!4v1666030517267!5m2!1sen!2sbd"
+                            width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </section>
     </div>
     <!-- end main-content -->
 

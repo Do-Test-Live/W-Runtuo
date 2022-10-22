@@ -72,7 +72,7 @@
                                                     class="flaticon-contact-044-call-1 font-icon  sm-display-block"></i>
                                             </a></div>
                                         <div class="media-body">
-                                            <h5 class="title">电话</h5>
+                                            <h5 class="title">電話</h5>
                                             <div class="subtitle"><a href="tel:(123)456-78-90">+852 2628-5678</a></div>
                                         </div>
                                     </div>
@@ -83,7 +83,7 @@
                                                     class="flaticon-contact-043-email-1 font-icon  sm-display-block"></i>
                                             </a></div>
                                         <div class="media-body">
-                                            <h5 class="title">给我们发电子邮件</h5>
+                                            <h5 class="title">給我們發電子郵件</h5>
                                             <div class="subtitle"><a href="mailto:info@example.com">info@runtuo.hk</a>
                                             </div>
                                         </div>
@@ -95,7 +95,7 @@
                                                     class="flaticon-contact-025-world font-icon  sm-display-block"></i> </a>
                                         </div>
                                         <div class="media-body">
-                                            <h5 class="title">帮助时间</h5>
+                                            <h5 class="title">幫助時間</h5>
                                             <div class="subtitle">星期一到星期五: 10:00-19:00 　　六: 10:00-14:00</div>
                                         </div>
                                     </div>
@@ -132,7 +132,7 @@
                                         <li><a href="#">申請流程</a></li>
                                         <li><a href="apply.php">即時申請</a></li>
                                         <li><a href="faq.php">常見問題</a></li>
-                                        <li><a href="#">聯絡方法</a></li>
+                                        <li><a href="contact.php">聯絡方法</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -370,7 +370,10 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="footer-paragraph text-center text-xl-end text-lg-end text-md-end">
-                                潤拓財務有限公司 : 公司簡介 | 申請流程 | 即時申請 | 常見問題 | 聯絡方法
+                                潤拓財務有限公司 : 公司簡介 | 申請流程 |
+                                <a href="apply.php" style="text-decoration: none;color: #91abc4">即時申請</a> |
+                                <a href="faq.php" style="text-decoration: none;color: #91abc4">常見問題</a> |
+                                <a href="contact.php" style="text-decoration: none;color: #91abc4">聯絡方法</a>
                             </div>
                         </div>
                     </div>
