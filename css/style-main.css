@@ -1378,8 +1378,8 @@ section {
 }
 
 section > .container, section > .container-fluid {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .vc-row-tm-section-padding {
@@ -2346,7 +2346,7 @@ header#header .nav-side-icon-list > li .custom-button {
 /* 2 - BRAND
 ======================================*/
 .menuzord-brand {
-    margin: 20px 30px 20px 0;
+    margin: 0px;
     float: left;
     color: #666;
     text-decoration: none;
@@ -8332,7 +8332,7 @@ body.tm-container-100pr .container-fluid {
 
 @media (max-width: 991.98px) {
     .tm-boxed-layout {
-        padding-top: 15px;
+        padding-top: 0px;
     }
 
     .tm-boxed-layout .header .navbar-default .navbar-nav > li > a {

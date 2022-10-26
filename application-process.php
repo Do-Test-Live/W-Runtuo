@@ -79,60 +79,6 @@
 <div class="clearfix">
     <!-- Header -->
     <header id="header" class="header header-layout-type-header-2rows navbar-scrolltofixed">
-        <div class="header-top desktop ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
-                        <div class="header-mid-column3-container">
-                            <div class="row justify-content-md-center">
-                                <div class="col-md-auto element text-center text-md-start">
-                                    <div class="contact-info-box big-icon">
-                                        <div class="left-thumb"><a href="tel:(123)456-78-90"> <i
-                                                        class="flaticon-contact-044-call-1 font-icon  sm-display-block"></i>
-                                            </a></div>
-                                        <div class="media-body">
-                                            <h5 class="title">電話</h5>
-                                            <div class="subtitle"><a href="tel:(123)456-78-90">+852 2628-5678</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-auto element text-center text-md-start">
-                                    <div class="contact-info-box big-icon">
-                                        <div class="left-thumb"><a href="mailto:info@runtuo.hk"> <i
-                                                        class="flaticon-contact-043-email-1 font-icon  sm-display-block"></i>
-                                            </a></div>
-                                        <div class="media-body">
-                                            <h5 class="title">給我們發電子郵件</h5>
-                                            <div class="subtitle"><a href="mailto:info@example.com">info@runtuo.hk</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-auto element text-center text-md-start">
-                                    <div class="contact-info-box big-icon">
-                                        <div class="left-thumb"><a href="#"> <i
-                                                        class="flaticon-contact-025-world font-icon  sm-display-block"></i>
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h5 class="title">幫助時間</h5>
-                                            <div class="subtitle">星期一到星期五: 10:00-19:00 　　六: 10:00-14:00</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
-                        <div class="element pt-0 pb-0 mb-sm-20">
-                            <a href="apply.php"
-                               class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup">即時申請</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="header-nav tm-enable-navbar-hide-on-scroll">
             <div class="header-nav-wrapper">
                 <div class="menuzord-container header-nav-container">
@@ -173,6 +119,60 @@
                 </div>
             </div>
         </div>
+                <div class="header-top desktop ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
+                        <div class="header-mid-column3-container">
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-auto element text-center text-md-start">
+                                    <div class="contact-info-box big-icon">
+                                        <div class="left-thumb"><a href="tel:(123)456-78-90"> <i
+                                                        class="flaticon-contact-044-call-1 font-icon  sm-display-block"></i>
+                                            </a></div>
+                                        <div class="media-body">
+                                            <h5 class="title">幫到手熱線 </h5>
+                                            <div class="subtitle"><a href="tel:(123)456-78-90">+852 2628-5678</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto element text-center text-md-start">
+                                    <div class="contact-info-box big-icon">
+                                        <div class="left-thumb"><a href="mailto:info@runtuo.hk"> <i
+                                                        class="flaticon-contact-043-email-1 font-icon  sm-display-block"></i>
+                                            </a></div>
+                                        <div class="media-body">
+                                            <h5 class="title">幫到手電郵</h5>
+                                            <div class="subtitle"><a href="mailto:info@example.com">info@runtuo.hk</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto element text-center text-md-start">
+                                    <div class="contact-info-box big-icon">
+                                        <div class="left-thumb"><a href="#"> <i
+                                                        class="flaticon-contact-025-world font-icon  sm-display-block"></i>
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="title">幫到手時間</h5>
+                                            <div class="subtitle">星期一至五: 10:00-19:00; 六: 10:00-14:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
+                        <div class="element pt-0 pb-0 mb-sm-20">
+                            <a href="apply.php"
+                               class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup">即時申請</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Start main-content -->
@@ -197,39 +197,40 @@
                     <div class="row">
                         <div class="col-lg-8 m-auto">
                             <div class="col-12 mb-5">
-                                <div class="card" style="border-radius: 30px;">
+                                <div class="card" style="border-radius: 30px;font-weight:bold">
                                     <div class="card-body pb-4" style="background: #3dabe3;color: #ffffff;border-radius: 30px">
                                         <h5 class="card-title text-center">客戶可經由以下方式向本公司提交申請</h5>
                                         <div class="row">
                                             <div class="col-4">
-                                                <h6 class="card-title text-center text-white">電話申請</h6>
-                                                <p class="card-text text-center">
+                                                <h5 class="card-title text-center text-white">電話申請</h5>
+                                                <p class="card-text text-center text-white">
                                                     <small>
                                                         專人服務熱線<br/>
-                                                        +852 3188 2266
+                                                        +852 2628-5678
                                                     </small>
                                                 </p>
                                             </div>
                                             <div class="col-4">
-                                                <h6 class="card-title text-center text-white">網上申請</h6>
-                                                <p class="card-text text-center">
-                                                    <small>
-                                                        網上即時申請<br/>
-                                                        技此進入
-                                                    </small
-                                                </p>
+                                                <a href="apply.php">
+                                                    <h5 class="card-title text-center text-white">網上申請</h5>
+                                                    <p class="card-text text-center text-white">
+                                                         <small>
+                                                            網上即時申請<br/>
+                                                            填寫以下表格
+                                                        </small>
+                                                    </p>
+                                                </a>
                                             </div>
                                             <div class="col-4">
-                                                <h6 class="card-title text-center text-white">親臨本公司</h6>
-                                                <p class="card-text text-center">
-                                                    <small>
-                                                        荃湍<br/>
-                                                        南豐中心 1903B
+                                                <h5 class="card-title text-center text-white">親臨本公司</h5>
+                                                <p class="card-text text-center text-white">
+                                                     <small>
+                                                        旺角 九龍行<br/>
+                                                        16樓 1603室
                                                     </small>
                                                 </p>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -240,14 +241,13 @@
                                     <div class="card" style="border-radius: 30px;">
                                         <div class="card-body pt-5 pb-4" style="background: #00284f;color: #ffffff;border-radius: 30px">
                                             <h4 class="d-flex justify-content-center align-items-center"
-                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -70px;margin-left: -55px;">
+                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -68px;margin-left: -45px;">
                                                 1
                                             </h4>
-                                            <h5 class="card-title text-center" style="margin-top: -45px;color: white">提供申請表及所需文件</h5>
+                                            <h5 class="card-title text-center" style="margin-top: -45px;color: white">貸款審批</h5>
                                             <p class="card-text text-center">
-                                                住址証明（銀行月結單 /水電煤月結單）<br/>
-                                                工作証明（糧單 / 稅單 /MPF証明文件）<br/>
-                                                註：以上最近三個月之內之文件
+                                                我們會有專人為你審核貸款文件，<br/>
+                                                一般會在10 - 15分鐘內完成審核結果並會盡快與你聯絡。
                                             </p>
                                         </div>
                                     </div>
@@ -259,7 +259,7 @@
                                     <div class="card" style="border-radius: 30px;">
                                         <div class="card-body pt-5 pb-4" style="background: #00284f;color: #ffffff;border-radius: 30px">
                                             <h4 class="d-flex justify-content-center align-items-center"
-                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -70px;margin-left: -55px;">
+                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -68px;margin-left: -45px;">
                                                 2
                                             </h4>
                                             <h5 class="card-title text-center" style="margin-top: -45px;color: white">貸款審批</h5>
@@ -278,7 +278,7 @@
                                     <div class="card" style="border-radius: 30px;">
                                         <div class="card-body pt-5 pb-4" style="background: #00284f;color: #ffffff;border-radius: 30px">
                                             <h4 class="d-flex justify-content-center align-items-center"
-                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -70px;margin-left: -55px;">
+                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -68px;margin-left: -45px;">
                                                 3
                                             </h4>
                                             <h5 class="card-title text-center" style="margin-top: -45px;color: white">簽署貸款協議</h5>
