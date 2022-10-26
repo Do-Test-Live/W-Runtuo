@@ -59,8 +59,8 @@
 <div class="side-panel-body-overlay"></div>
 <div class="clearfix">
     <!-- Header -->
-    <header id="header" class="header header-layout-type-header-2rows">
-        <div class="header-top desktop">
+    <header id="header" class="header header-layout-type-header-2rows navbar-scrolltofixed">
+        <div class="header-top desktop ">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
@@ -92,7 +92,8 @@
                                 <div class="col-md-auto element text-center text-md-start">
                                     <div class="contact-info-box big-icon">
                                         <div class="left-thumb"><a href="#"> <i
-                                                class="flaticon-contact-025-world font-icon  sm-display-block"></i> </a>
+                                                class="flaticon-contact-025-world font-icon  sm-display-block"></i>
+                                        </a>
                                         </div>
                                         <div class="media-body">
                                             <h5 class="title">幫助時間</h5>
@@ -114,7 +115,7 @@
             </div>
         </div>
         <div class="header-nav tm-enable-navbar-hide-on-scroll">
-            <div class="header-nav-wrapper navbar-scrolltofixed">
+            <div class="header-nav-wrapper">
                 <div class="menuzord-container header-nav-container">
                     <div class="container position-relative">
                         <div class="row header-nav-col-row">
@@ -129,10 +130,10 @@
                                      data-animation="none" data-align="right">
                                     <ul id="main-nav" class="menuzord-menu onepage-nav">
                                         <li><a href="#company-profile">公司簡介</a></li>
-                                        <li><a href="#">申請流程</a></li>
+                                        <li><a href="application-process.php">申請流程</a></li>
                                         <li><a href="apply.php">即時申請</a></li>
                                         <li><a href="faq.php">常見問題</a></li>
-                                        <li><a href="contact.php">聯絡方法</a></li>
+                                        <li><a href="#contact">聯絡方法</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -220,7 +221,7 @@
                                                 data-frame_999="o:0;st:w;sR:8700;"
                                                 style="z-index:8;"
                                         ><a href="#"
-                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white">一鍵申請</a>
+                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white" id="company-profile">一鍵申請</a>
                                         </rs-layer>
                                         <rs-layer
                                                 id="slider-4-slide-19-layer-33"
@@ -265,7 +266,7 @@
         <!-- Section: home End -->
 
         <!--introduction section starts here-->
-        <section id="company-profile">
+        <section>
             <div class="container" style="padding-bottom: 0px;">
                 <div>
                     <div class="row">
@@ -395,7 +396,7 @@
 
         <!-- Section: Get a Free Quote -->
         <section class="bg-no-repeat bg-pos-center-top bg-size-cover bg-theme-colored1"
-                 data-tm-bg-img="images/bg/map-white.png">
+                 data-tm-bg-img="images/bg/map-white.png" >
             <div class="container">
                 <div class="section-content">
                     <div class="row d-flex align-items-center">
@@ -406,7 +407,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-xl-4 text-start text-lg-end">
+                        <div class="col-lg-4 col-xl-4 text-start text-lg-end" id="contact">
                             <a href="apply.php" class="btn btn-flat btn-dark text-white">Apply Now</a>
                         </div>
                     </div>
@@ -415,7 +416,7 @@
         </section>
 
         <!-- Section: Coontact -->
-        <section id="contact" class="divider">
+        <section class="divider">
             <div class="container">
                 <div class="row pt-30">
                     <div class="col-lg-4">
@@ -579,37 +580,6 @@
                     <div class="col-lg-4 col-md-12 col-sm-12 text-center text-sm-start mb-md-40">
                         <img src="images/runtao_logo-white.png" alt="">
                     </div>
-                    <div class="col-lg-8 co-md-12 col-sm-12">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center mb-sm-30">
-                                    <div class="icon"><i class="fa fa-phone"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">電話</p>
-                                        <h6 class="phone-number">2628-5678</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center mb-sm-30">
-                                    <div class="icon"><i class="fa fa-envelope"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">電郵</p>
-                                        <h6 class="phone-number">info@runtuo.hk</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center">
-                                    <div class="icon"><i class="fa fa-map-marker"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">地址</p>
-                                        <h6 class="phone-number">九龍旺角彌敦道555號九龍行16樓1603室</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -625,10 +595,11 @@
                         <div class="col-sm-6">
                             <div class="footer-paragraph text-center text-xl-end text-lg-end text-md-end">
                                 潤拓財務有限公司 :
-                                <a href="#company-profile" style="text-decoration: none;color: #91abc4">公司簡介</a> | 申請流程 |
+                                <a href="#company-profile" style="text-decoration: none;color: #91abc4">公司簡介</a> |
+                                <a href="application-process.php" style="text-decoration: none;color: #91abc4">申請流程</a> |
                                 <a href="apply.php" style="text-decoration: none;color: #91abc4">即時申請</a> |
                                 <a href="faq.php" style="text-decoration: none;color: #91abc4">常見問題</a> |
-                                <a href="contact.php" style="text-decoration: none;color: #91abc4">聯絡方法</a>
+                                <a href="#contact" style="text-decoration: none;color: #91abc4">聯絡方法</a>
                             </div>
                         </div>
                     </div>

@@ -59,8 +59,8 @@
 <div class="side-panel-body-overlay"></div>
 <div class="clearfix">
     <!-- Header -->
-    <header id="header" class="header header-layout-type-header-2rows">
-        <div class="header-top desktop">
+    <header id="header" class="header header-layout-type-header-2rows navbar-scrolltofixed">
+        <div class="header-top desktop ">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
@@ -69,7 +69,7 @@
                                 <div class="col-md-auto element text-center text-md-start">
                                     <div class="contact-info-box big-icon">
                                         <div class="left-thumb"><a href="tel:(123)456-78-90"> <i
-                                                    class="flaticon-contact-044-call-1 font-icon  sm-display-block"></i>
+                                                        class="flaticon-contact-044-call-1 font-icon  sm-display-block"></i>
                                             </a></div>
                                         <div class="media-body">
                                             <h5 class="title">電話</h5>
@@ -80,7 +80,7 @@
                                 <div class="col-md-auto element text-center text-md-start">
                                     <div class="contact-info-box big-icon">
                                         <div class="left-thumb"><a href="mailto:info@runtuo.hk"> <i
-                                                    class="flaticon-contact-043-email-1 font-icon  sm-display-block"></i>
+                                                        class="flaticon-contact-043-email-1 font-icon  sm-display-block"></i>
                                             </a></div>
                                         <div class="media-body">
                                             <h5 class="title">給我們發電子郵件</h5>
@@ -92,7 +92,8 @@
                                 <div class="col-md-auto element text-center text-md-start">
                                     <div class="contact-info-box big-icon">
                                         <div class="left-thumb"><a href="#"> <i
-                                                    class="flaticon-contact-025-world font-icon  sm-display-block"></i> </a>
+                                                        class="flaticon-contact-025-world font-icon  sm-display-block"></i>
+                                            </a>
                                         </div>
                                         <div class="media-body">
                                             <h5 class="title">幫助時間</h5>
@@ -114,7 +115,7 @@
             </div>
         </div>
         <div class="header-nav tm-enable-navbar-hide-on-scroll">
-            <div class="header-nav-wrapper navbar-scrolltofixed">
+            <div class="header-nav-wrapper">
                 <div class="menuzord-container header-nav-container">
                     <div class="container position-relative">
                         <div class="row header-nav-col-row">
@@ -129,10 +130,10 @@
                                      data-animation="none" data-align="right">
                                     <ul id="main-nav" class="menuzord-menu onepage-nav">
                                         <li><a href="index.html#company-profile">公司簡介</a></li>
-                                        <li><a href="#">申請流程</a></li>
+                                        <li><a href="application-process.php">申請流程</a></li>
                                         <li><a href="apply.php">即時申請</a></li>
                                         <li><a href="faq.php">常見問題</a></li>
-                                        <li><a href="contact.php">聯絡方法</a></li>
+                                        <li><a href="index.html#contact">聯絡方法</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -157,6 +158,18 @@
 
     <!-- Start main-content -->
     <div class="main-content-area">
+        <!-- Section: page title -->
+        <section class="page-title layer-overlay overlay-dark-9 section-typo-light bg-img-center" data-tm-bg-img="images/bg/bg1.jpg">
+            <div class="container pt-100 pb-100">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="title">常見問題</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Section: home Start -->
         <section id="home">
             <div class="container pt-5 pb-5">
@@ -325,37 +338,6 @@
                     <div class="col-lg-4 col-md-12 col-sm-12 text-center text-sm-start mb-md-40">
                         <img src="images/runtao_logo-white.png" alt="">
                     </div>
-                    <div class="col-lg-8 co-md-12 col-sm-12">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center mb-sm-30">
-                                    <div class="icon"><i class="fa fa-phone"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">電話</p>
-                                        <h6 class="phone-number">2628-5678</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center mb-sm-30">
-                                    <div class="icon"><i class="fa fa-envelope"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">電郵</p>
-                                        <h6 class="phone-number">info@runtuo.hk</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center">
-                                    <div class="icon"><i class="fa fa-map-marker"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">地址</p>
-                                        <h6 class="phone-number">九龍旺角彌敦道555號九龍行16樓1603室</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -371,10 +353,11 @@
                         <div class="col-sm-6">
                             <div class="footer-paragraph text-center text-xl-end text-lg-end text-md-end">
                                 潤拓財務有限公司 :
-                                <a href="index.html#company-profile" style="text-decoration: none;color: #91abc4">公司簡介</a> | 申請流程 |
+                                <a href="index.html#company-profile" style="text-decoration: none;color: #91abc4">公司簡介</a> |
+                                <a href="application-process.php" style="text-decoration: none;color: #91abc4">申請流程</a> |
                                 <a href="apply.php" style="text-decoration: none;color: #91abc4">即時申請</a> |
                                 <a href="faq.php" style="text-decoration: none;color: #91abc4">常見問題</a> |
-                                <a href="contact.php" style="text-decoration: none;color: #91abc4">聯絡方法</a>
+                                <a href="index.html#contact" style="text-decoration: none;color: #91abc4">聯絡方法</a>
                             </div>
                         </div>
                     </div>

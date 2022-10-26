@@ -1517,9 +1517,6 @@ body.tm_wpb_vc_js_status_true .sidebar-area {
     background-color: rgba(17, 17, 17, 0.8);
 }
 
-.layer-overlay.overlay-dark-9::before {
-    background-color: rgba(17, 17, 17, 0.9);
-}
 
 .layer-overlay.overlay-white::before {
     background-color: rgba(255, 255, 255, 0.4);

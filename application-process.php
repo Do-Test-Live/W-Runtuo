@@ -78,8 +78,8 @@
 <div class="side-panel-body-overlay"></div>
 <div class="clearfix">
     <!-- Header -->
-    <header id="header" class="header header-layout-type-header-2rows">
-        <div class="header-top desktop">
+    <header id="header" class="header header-layout-type-header-2rows navbar-scrolltofixed">
+        <div class="header-top desktop ">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
@@ -134,7 +134,7 @@
             </div>
         </div>
         <div class="header-nav tm-enable-navbar-hide-on-scroll">
-            <div class="header-nav-wrapper navbar-scrolltofixed">
+            <div class="header-nav-wrapper">
                 <div class="menuzord-container header-nav-container">
                     <div class="container position-relative">
                         <div class="row header-nav-col-row">
@@ -149,10 +149,10 @@
                                      data-animation="none" data-align="right">
                                     <ul id="main-nav" class="menuzord-menu onepage-nav">
                                         <li><a href="index.html#company-profile">公司簡介</a></li>
-                                        <li><a href="#">申請流程</a></li>
+                                        <li><a href="application-process.php">申請流程</a></li>
                                         <li><a href="apply.php">即時申請</a></li>
                                         <li><a href="faq.php">常見問題</a></li>
-                                        <li><a href="contact.php">聯絡方法</a></li>
+                                        <li><a href="index.html#contact">聯絡方法</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -177,23 +177,78 @@
 
     <!-- Start main-content -->
     <div class="main-content-area">
+        <!-- Section: page title -->
+        <section class="page-title layer-overlay overlay-dark-9 section-typo-light bg-img-center" data-tm-bg-img="images/bg/bg1.jpg">
+            <div class="container pt-100 pb-100">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="title">申請流程</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Section: home Start -->
         <section id="home">
             <div class="container pt-5 pb-5">
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-8 m-auto">
+                            <div class="col-12 mb-5">
+                                <div class="card" style="border-radius: 30px;">
+                                    <div class="card-body pb-4" style="background: #3dabe3;color: #ffffff;border-radius: 30px">
+                                        <h5 class="card-title text-center">客戶可經由以下方式向本公司提交申請</h5>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h6 class="card-title text-center text-white">電話申請</h6>
+                                                <p class="card-text text-center">
+                                                    <small>
+                                                        專人服務熱線<br/>
+                                                        +852 3188 2266
+                                                    </small>
+                                                </p>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="card-title text-center text-white">網上申請</h6>
+                                                <p class="card-text text-center">
+                                                    <small>
+                                                        網上即時申請<br/>
+                                                        技此進入
+                                                    </small
+                                                </p>
+                                            </div>
+                                            <div class="col-4">
+                                                <h6 class="card-title text-center text-white">親臨本公司</h6>
+                                                <p class="card-text text-center">
+                                                    <small>
+                                                        荃湍<br/>
+                                                        南豐中心 1903B
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 m-auto">
                             <div class="row">
                                 <div class="col-12 mb-3">
-                                    <div class="card">
-                                        <div class="card-body">
+                                    <div class="card" style="border-radius: 30px;">
+                                        <div class="card-body pt-5 pb-4" style="background: #00284f;color: #ffffff;border-radius: 30px">
                                             <h4 class="d-flex justify-content-center align-items-center"
-                                                style="height: 100px;width: 100px;background: #3dabe3;border-radius: 50%;margin-top: -63px;margin-left: -80px;">
+                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -70px;margin-left: -55px;">
                                                 1
                                             </h4>
-                                            <h5 class="card-title text-center" style="margin-top: -45px">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title
-                                                and make up the bulk of the card's content.</p>
+                                            <h5 class="card-title text-center" style="margin-top: -45px;color: white">提供申請表及所需文件</h5>
+                                            <p class="card-text text-center">
+                                                住址証明（銀行月結單 /水電煤月結單）<br/>
+                                                工作証明（糧單 / 稅單 /MPF証明文件）<br/>
+                                                註：以上最近三個月之內之文件
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -201,15 +256,18 @@
                                     <h1 class="text-center"><i class="fa-solid fa-arrow-down"></i></h1>
                                 </div>
                                 <div class="col-12 mb-3">
-                                    <div class="card">
-                                        <div class="card-body">
+                                    <div class="card" style="border-radius: 30px;">
+                                        <div class="card-body pt-5 pb-4" style="background: #00284f;color: #ffffff;border-radius: 30px">
                                             <h4 class="d-flex justify-content-center align-items-center"
-                                                style="height: 100px;width: 100px;background: #3dabe3;border-radius: 50%;margin-top: -63px;margin-left: -80px;">
+                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -70px;margin-left: -55px;">
                                                 2
                                             </h4>
-                                            <h5 class="card-title text-center" style="margin-top: -45px">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title
-                                                and make up the bulk of the card's content.</p>
+                                            <h5 class="card-title text-center" style="margin-top: -45px;color: white">貸款審批</h5>
+                                            <p class="card-text text-center">
+                                                我們會有專人為你審核貸款文件，<br/>
+                                                一般會在半<br/>
+                                                至一小時內完成審核結果並會盡快與你聯絡。
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -217,15 +275,17 @@
                                     <h1 class="text-center"><i class="fa-solid fa-arrow-down"></i></h1>
                                 </div>
                                 <div class="col-12 mb-3">
-                                    <div class="card">
-                                        <div class="card-body">
+                                    <div class="card" style="border-radius: 30px;">
+                                        <div class="card-body pt-5 pb-4" style="background: #00284f;color: #ffffff;border-radius: 30px">
                                             <h4 class="d-flex justify-content-center align-items-center"
-                                                style="height: 100px;width: 100px;background: #3dabe3;border-radius: 50%;margin-top: -63px;margin-left: -80px;">
+                                                style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -70px;margin-left: -55px;">
                                                 3
                                             </h4>
-                                            <h5 class="card-title text-center" style="margin-top: -45px">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title
-                                                and make up the bulk of the card's content.</p>
+                                            <h5 class="card-title text-center" style="margin-top: -45px;color: white">簽署貸款協議</h5>
+                                            <p class="card-text text-center">
+                                                於辦公時間到我們門店簽署貸款協議，並即時<br/>
+                                                提取現金。
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -247,37 +307,6 @@
                     <div class="col-lg-4 col-md-12 col-sm-12 text-center text-sm-start mb-md-40">
                         <img src="images/runtao_logo-white.png" alt="">
                     </div>
-                    <div class="col-lg-8 co-md-12 col-sm-12">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center mb-sm-30">
-                                    <div class="icon"><i class="fa fa-phone"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">電話</p>
-                                        <h6 class="phone-number">2628-5678</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center mb-sm-30">
-                                    <div class="icon"><i class="fa fa-envelope"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">電郵</p>
-                                        <h6 class="phone-number">info@runtuo.hk</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12">
-                                <div class="footer-contact-box d-flex align-items-center">
-                                    <div class="icon"><i class="fa fa-map-marker"></i></div>
-                                    <div class="contact-info">
-                                        <p class="text-theme-colored1 text">地址</p>
-                                        <h6 class="phone-number">九龍旺角彌敦道555號九龍行16樓1603室</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -293,11 +322,11 @@
                         <div class="col-sm-6">
                             <div class="footer-paragraph text-center text-xl-end text-lg-end text-md-end">
                                 潤拓財務有限公司 :
-                                <a href="index.html#company-profile"
-                                   style="text-decoration: none;color: #91abc4">公司簡介</a> | 申請流程 |
+                                <a href="index.html#company-profile" style="text-decoration: none;color: #91abc4">公司簡介</a> |
+                                <a href="application-process.php" style="text-decoration: none;color: #91abc4">申請流程</a> |
                                 <a href="apply.php" style="text-decoration: none;color: #91abc4">即時申請</a> |
                                 <a href="faq.php" style="text-decoration: none;color: #91abc4">常見問題</a> |
-                                <a href="contact.php" style="text-decoration: none;color: #91abc4">聯絡方法</a>
+                                <a href="index.html#contact" style="text-decoration: none;color: #91abc4">聯絡方法</a>
                             </div>
                         </div>
                     </div>
