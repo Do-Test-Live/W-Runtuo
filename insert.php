@@ -25,7 +25,7 @@ if (isset($_POST["loanApply"])) {
 
     echo "<script>
                 alert('申請成功');
-                window.location.href='index.html';
+                window.location.href='index.php';
                 </script>";
 }
 
@@ -44,6 +44,6 @@ if (isset($_POST["contactAdd"])) {
 
     echo "<script>
                 alert('成功聯繫');
-                window.location.href='index.html';
+                window.location.href='index.php';
                 </script>";
 }
