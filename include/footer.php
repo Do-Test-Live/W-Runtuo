@@ -9,7 +9,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="footer-paragraph text-center text-xl-end text-lg-end text-md-end">
+                        <div class="footer-paragraph text-center text-xl-end text-lg-end text-md-end" style="font-size: small">
                             <a href="index.php#company-profile" style="text-decoration: none;color: #91abc4">公司簡介</a> |
                             <a href="application-process.php" style="text-decoration: none;color: #91abc4">申請流程</a> |
                             <a href="apply.php" style="text-decoration: none;color: #91abc4">即時申請</a> |
