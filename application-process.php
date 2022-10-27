@@ -171,8 +171,8 @@
                                             <h5 class="card-title text-center" style="margin-top: -45px;color: white">貸款審批</h5>
                                             <p class="card-text text-center">
                                                 我們會有專人為你審核貸款文件，<br/>
-                                                一般會在半<br/>
-                                                至一小時內完成審核結果並會盡快與你聯絡。
+                                                一般會在10 - 15分鐘內<br/>
+                                                完成審核結果並會盡快與你聯絡。
                                             </p>
                                         </div>
                                     </div>

@@ -258,7 +258,7 @@
                                                 data-frame_999="o:0;st:w;sR:8700;"
                                                 style="z-index:8;"
                                         ><a href="apply.php"
-                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white" id="company-profile">一鍵申請</a>
+                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white">一鍵申請</a>
                                         </rs-layer>
                                         <rs-layer
                                                 id="slider-4-slide-19-layer-33"
@@ -303,8 +303,8 @@
         <!-- Section: home End -->
 
         <!--introduction section starts here-->
-        <section>
-            <div class="container" style="padding-bottom: 0px;">
+        <section id="company-profile">
+            <div class="container" style="padding-bottom: 0px;" >
                 <div>
                     <div class="row">
                         <div class="text-center">

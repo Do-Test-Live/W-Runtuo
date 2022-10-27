@@ -14,11 +14,11 @@
                             <nav id="top-primary-nav" class="menuzord green" data-effect="fade"
                                  data-animation="none" data-align="right">
                                 <ul id="main-nav" class="menuzord-menu onepage-nav">
-                                    <li><a href="#company-profile">公司簡介</a></li>
+                                    <li><a href="index.php#company-profile">公司簡介</a></li>
                                     <li><a href="application-process.php">申請流程</a></li>
                                     <li><a href="apply.php">即時申請</a></li>
                                     <li><a href="faq.php">常見問題</a></li>
-                                    <li><a href="#contact">聯絡方法</a></li>
+                                    <li><a href="index.php#contact">聯絡方法</a></li>
                                 </ul>
                             </nav>
                         </div>
