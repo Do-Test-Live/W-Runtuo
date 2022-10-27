@@ -344,22 +344,13 @@
 
     <!-- Footer -->
     <footer id="footer" class="footer" data-tm-bg-img="images/footer-bg.png">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12 text-center text-sm-start mb-md-40">
-                        <img src="images/runtao_logo-white.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-widget-area">
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row pt-20 pb-20">
                         <div class="col-sm-6">
                             <div class="footer-paragraph text-center text-xl-start text-lg-start text-md-start mb-sm-15">
-                                © 2021 Runtuo. All Rights Reserved.
+                                <img src="images/runtao_logo-white.png" alt="" class="img-fluid" style="max-width: 200px;">
                             </div>
                         </div>
                         <div class="col-sm-6">

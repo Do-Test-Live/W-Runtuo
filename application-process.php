@@ -215,8 +215,8 @@
                                                     <h5 class="card-title text-center text-white">網上申請</h5>
                                                     <p class="card-text text-center text-white">
                                                          <small>
-                                                            網上即時申請<br/>
-                                                            填寫以下表格
+                                                            即時網上申請<br/>
+                                                按此進入
                                                         </small>
                                                     </p>
                                                 </a>
@@ -244,10 +244,11 @@
                                                 style="height: 85px;width: 85px;background: #3dabe3;border-radius: 50%;margin-top: -68px;margin-left: -45px;">
                                                 1
                                             </h4>
-                                            <h5 class="card-title text-center" style="margin-top: -45px;color: white">貸款審批</h5>
+                                            <h5 class="card-title text-center" style="margin-top: -45px;color: white">提供申請表及所需文件</h5>
                                             <p class="card-text text-center">
-                                                我們會有專人為你審核貸款文件，<br/>
-                                                一般會在10 - 15分鐘內完成審核結果並會盡快與你聯絡。
+                                                住址証明（銀行月結單 /水電煤月結單）<br/>
+                                                工作証明（糧單 / 稅單 /MPF証明文件）<br/>
+                                                註：以上最近三個月之內之文件
                                             </p>
                                         </div>
                                     </div>
@@ -265,8 +266,8 @@
                                             <h5 class="card-title text-center" style="margin-top: -45px;color: white">貸款審批</h5>
                                             <p class="card-text text-center">
                                                 我們會有專人為你審核貸款文件，<br/>
-                                                一般會在半<br/>
-                                                至一小時內完成審核結果並會盡快與你聯絡。
+                                                一般會在10-15分鐘內<br/>
+                                                完成審核結果並會盡快與你聯絡。
                                             </p>
                                         </div>
                                     </div>
@@ -301,22 +302,13 @@
 
     <!-- Footer -->
     <footer id="footer" class="footer" data-tm-bg-img="images/footer-bg.png">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12 text-center text-sm-start mb-md-40">
-                        <img src="images/runtao_logo-white.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer-widget-area">
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row pt-20 pb-20">
                         <div class="col-sm-6">
                             <div class="footer-paragraph text-center text-xl-start text-lg-start text-md-start mb-sm-15">
-                                © 2021 Runtuo. All Rights Reserved.
+                                <img src="images/runtao_logo-white.png" alt="" class="img-fluid" style="max-width: 200px;">
                             </div>
                         </div>
                         <div class="col-sm-6">
