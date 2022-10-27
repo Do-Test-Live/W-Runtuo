@@ -104,11 +104,11 @@
                             <div class="col-12 mb-5">
                                 <div class="card" style="border-radius: 30px;font-weight:bold">
                                     <div class="card-body pb-4" style="background: #3dabe3;color: #ffffff;border-radius: 30px">
-                                        <h5 class="card-title text-center">客戶可經由以下方式向本公司提交申請</h5>
+                                        <h5 class="card-title text-center" style="font-size: 18px">客戶可經由以下方式向本公司提交申請</h5>
                                         <div class="row">
                                             <div class="col-4">
-                                                <h5 class="card-title text-center">電話申請</h5>
-                                                <p class="card-text text-center text-white">
+                                                <h6 class="card-title text-center">電話申請</h6>
+                                                <p class="card-text text-center text-white" style="font-size: 12px">
                                                     <small>
                                                         專人服務熱線<br/>
                                                         +852 2628-5678
@@ -117,8 +117,8 @@
                                             </div>
                                             <div class="col-4">
                                                 <a href="apply.php">
-                                                    <h5 class="card-title text-center">網上申請</h5>
-                                                    <p class="card-text text-center text-white">
+                                                    <h6 class="card-title text-center">網上申請</h6>
+                                                    <p class="card-text text-center text-white" style="font-size: 12px">
                                                          <small>
                                                             即時網上申請<br/>
                                                             按此進入
@@ -127,8 +127,8 @@
                                                 </a>
                                             </div>
                                             <div class="col-4">
-                                                <h5 class="card-title text-center">親臨本公司</h5>
-                                                <p class="card-text text-center text-white">
+                                                <h6 class="card-title text-center">親臨本公司</h6>
+                                                <p class="card-text text-center text-white" style="font-size: 12px">
                                                      <small>
                                                         旺角 九龍行<br/>
                                                         16樓 1603室

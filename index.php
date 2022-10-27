@@ -52,6 +52,11 @@
     <script src="js/revolution-slider/js/revolution.tools.min.js"></script>
     <script src="js/revolution-slider/js/rs6.min.js"></script>
     <script src="js/revolution-slider/extra-rev-slider1.js"></script>
+    <style>
+        .col-4{
+            padding: 3px !important;
+        }
+    </style>
 
 </head>
 <body class="tm-container-1300px has-side-panel side-panel-right tm-boxed-layout layer-overlay overlay-dark-9"
@@ -73,7 +78,7 @@
                         <rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="industrivo-rev-slider-2"
                                         data-source="gallery"
                                         style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-                            <rs-module id="rev_slider_1_1" style="display:none;" data-version="6.1.7">
+                            <rs-module id="rev_slider_1_1" style="display:none;padding-top: 100px;" data-version="6.1.7">
                                 <rs-slides>
                                     <rs-slide data-key="rs-19" data-title="Slide 1" data-thumb="images/bg/slide2.jpg"
                                               data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
@@ -304,7 +309,7 @@
 
         <!--introduction section starts here-->
         <section id="company-profile">
-            <div class="container" style="padding-bottom: 0px;" >
+            <div class="container" style="padding-bottom: 0px;padding-top: 150px" >
                 <div>
                     <div class="row">
                         <div class="text-center">
@@ -435,20 +440,20 @@
             <div class="container">
                 <div class="section-content">
                     <div class="row d-flex align-items-center">
-                        <div class="col-lg-12 col-xl-12">
+                        <div class="col-lg-12 col-xl-12" style="padding: 0;margin: 0">
                             <div class="book-roofing">
                                 <div class="book-roofing-text">
                                     <h2 class="text-white mt-0 mb-md-15 text-center">靈活貸款方案</h2>
                                 </div>
                             </div>
                             <div class="row mt-4 pt-2">
-                                <div class="col-4 m-auto">
+                                <div class="col-4">
                                     <img src="images/01.png" alt="" class="img-fluid">
                                 </div>
-                                <div class="col-4 m-auto">
+                                <div class="col-4">
                                     <img src="images/02.png" alt="" class="img-fluid">
                                 </div>
-                                <div class="col-4 m-auto">
+                                <div class="col-4">
                                     <img src="images/03.png" alt="" class="img-fluid">
                                 </div>
                             </div>
