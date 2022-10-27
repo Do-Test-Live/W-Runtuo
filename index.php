@@ -5,6 +5,7 @@
 
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
     <!-- Page Title -->
@@ -78,7 +79,7 @@
                         <rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="industrivo-rev-slider-2"
                                         data-source="gallery"
                                         style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-                            <rs-module id="rev_slider_1_1" style="display:none;padding-top: 100px;" data-version="6.1.7">
+                            <rs-module id="rev_slider_1_1" style="display:none;" data-version="6.1.7">
                                 <rs-slides>
                                     <rs-slide data-key="rs-19" data-title="Slide 1" data-thumb="images/bg/slide2.jpg"
                                               data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
@@ -106,7 +107,7 @@
                                                 data-frame_999="o:0;st:w;sR:7790;"
                                                 style="z-index:9;text-transform: uppercase;"
                                                 class="font-current-theme1"
-                                         >Run Tuo Finance<br/>
+                                        >Run Tuo Finance<br/>
                                             Company Limited
                                         </rs-layer>
                                         <rs-layer
@@ -172,7 +173,7 @@
                                                 data-frame_999="o:0;st:w;sR:7790;"
                                                 style="z-index:9;text-transform: uppercase;"
                                                 class="font-current-theme1"
-                                         >Run Tuo Finance<br/>
+                                        >Run Tuo Finance<br/>
                                             Company Limited
                                         </rs-layer>
                                         <rs-layer
@@ -238,7 +239,7 @@
                                                 data-frame_999="o:0;st:w;sR:7790;"
                                                 style="z-index:9;text-transform: uppercase;"
                                                 class="font-current-theme1"
-                                         >Run Tuo Finance<br/>
+                                        >Run Tuo Finance<br/>
                                             Company Limited
                                         </rs-layer>
                                         <rs-layer
@@ -309,7 +310,7 @@
 
         <!--introduction section starts here-->
         <section id="company-profile">
-            <div class="container" style="padding-bottom: 0px;padding-top: 150px" >
+            <div class="container" style="padding-bottom: 0px;padding-top: 120px" >
                 <div>
                     <div class="row">
                         <div class="text-center">
@@ -339,8 +340,11 @@
                                 <div class="tm-sc-section-title section-title">
                                     <div class="title-wrapper">
                                         <h2>靈活貸款方案</h2>
-                                        <h6 class="mt-0 font-italic">不設特定貸款種類！靈活貸款、輕鬆週轉！
-                                            助你渡過每個難關</h6>
+                                        <h6 class="mt-0 font-italic">
+                                            不設特定貸款種類！靈活貸款、輕鬆週轉！
+                                            <br/>
+                                            助你渡過每個難關
+                                        </h6>
                                     </div>
                                 </div>
                             </div>
@@ -359,7 +363,10 @@
                                         <h4>電話即時申請</h4>
                                     </div>
                                     <div class="details">
-                                        <p class="mb-0">即刻打嚟 2628-5678，我地可靠既團隊即時為你解決須要！</p>
+                                        <p class="mb-0">
+                                            即刻打嚟 2628-5678，我地可靠既團隊<br/>
+                                            即時為你解決須要！
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -374,7 +381,8 @@
                                         <h4>親臨本店申請</h4>
                                     </div>
                                     <div class="details">
-                                        <p class="mb-0">親臨本公司申請，即時批核，即時現金到手！</p>
+                                        <p class="mb-0">親臨本公司申請，即時批核，
+                                            即時現金到手！</p>
                                     </div>
                                 </div>
                             </div>
@@ -424,7 +432,7 @@
                                         <li>我們專業可靠團隊隨時為你解答難題！</li>
                                         <li>放債人牌照號碼:0360/2022</li>
                                         <li>忠告：借錢梗要還，咪俾錢中介！<br/>
-                                        投訴人熱線：2628-5678</li>
+                                            投訴人熱線：2628-5678</li>
                                     </ul>
                                 </div>
                             </div>
@@ -475,7 +483,7 @@
                             <div class="icon-box-wrapper">
                                 <div class="icon-wrapper">
                                     <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
-                                            class="flaticon-contact-045-call"></i> </a>
+                                                class="flaticon-contact-045-call"></i> </a>
                                 </div>
                                 <div class="icon-text">
                                     <h5 class="icon-box-title mt-0">電話</h5>
@@ -488,7 +496,7 @@
                             <div class="icon-box-wrapper">
                                 <div class="icon-wrapper">
                                     <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
-                                            class="flaticon-contact-009-phone-3"></i> </a>
+                                                class="flaticon-contact-009-phone-3"></i> </a>
                                 </div>
                                 <div class="icon-text">
                                     <h5 class="icon-box-title mt-0">傳真</h5>
@@ -501,7 +509,7 @@
                             <div class="icon-box-wrapper">
                                 <div class="icon-wrapper">
                                     <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
-                                            class="flaticon-contact-043-email-1"></i> </a>
+                                                class="flaticon-contact-043-email-1"></i> </a>
                                 </div>
                                 <div class="icon-text">
                                     <h5 class="icon-box-title mt-0">電郵</h5>
@@ -515,7 +523,7 @@
                             <div class="icon-box-wrapper">
                                 <div class="icon-wrapper">
                                     <a class="icon icon-type-font-icon icon-dark icon-circled"> <i
-                                            class="flaticon-contact-037-address"></i> </a>
+                                                class="flaticon-contact-037-address"></i> </a>
                                 </div>
                                 <div class="icon-text">
                                     <h5 class="icon-box-title mt-0">地址</h5>
@@ -569,7 +577,7 @@
                                         name="contactAdd">送出
                                 </button>
                                 <a href="index.php#contact"
-                                        class="btn btn-flat btn-theme-colored3 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">
+                                   class="btn btn-flat btn-theme-colored3 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">
                                     重置
                                 </a>
                             </div>
