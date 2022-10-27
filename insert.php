@@ -43,7 +43,7 @@ if (isset($_POST["contactAdd"])) {
     $insert = $db_handle->insertQuery("INSERT INTO `contact`(`name`, `email`, `subject`, `message`, `inserted_at`) VALUES ('$name','$email','$subject','$message','$inserted_at')");
 
     echo "<script>
-                alert('申請成功');
+                alert('成功聯繫');
                 window.location.href='index.html';
                 </script>";
 }
