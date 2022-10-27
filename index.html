@@ -621,21 +621,21 @@
                         <h6 class="mt-0 mb-4">潤拓財務有限公司</h6>
                         <!-- Contact Form -->
                         <form id="contact_form" name="contact_form" class=""
-                              action="#"
+                              action="insert.php"
                               method="post">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label>你的姓名 <small>*</small></label>
                                         <input name="name" class="form-control" type="text"
-                                               placeholder="你的姓名">
+                                               placeholder="你的姓名" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="mb-3">
                                         <label>聯絡電郵<small>*</small></label>
-                                        <input name="form_email" class="form-control required email" type="email"
-                                               placeholder="聯絡電郵">
+                                        <input name="email" class="form-control required email" type="email"
+                                               placeholder="聯絡電郵" required>
                                     </div>
                                 </div>
                             </div>
@@ -643,56 +643,28 @@
                                 <div class="col-sm-12">
                                     <div class="mb-3">
                                         <label>聯絡電話<small>*</small></label>
-                                        <input name="form_subject" class="form-control required" type="text"
-                                               placeholder="聯絡電話">
+                                        <input name="subject" class="form-control required" type="text"
+                                               placeholder="聯絡電話" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label>查詢內容</label>
-                                <textarea name="form_message" class="form-control required" rows="5"
-                                          placeholder="查詢內容"></textarea>
+                                <textarea name="message" class="form-control required" rows="5"
+                                          placeholder="查詢內容" required></textarea>
                             </div>
                             <div class="mb-3">
-                                <input name="form_botcheck" class="form-control" type="hidden" value=""/>
                                 <button type="submit"
                                         class="btn btn-flat btn-theme-colored1 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px"
-                                        data-loading-text="Please wait...">送出
+                                        name="contactAdd">送出
                                 </button>
-                                <button type="reset"
+                                <a href="index.html#contact"
                                         class="btn btn-flat btn-theme-colored3 text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">
                                     重置
-                                </button>
+                                </a>
                             </div>
                         </form>
                         <!-- Contact Form Validation-->
-                        <script>
-                            (function ($) {
-                                $("#contact_form").validate({
-                                    submitHandler: function (form) {
-                                        var form_btn = $(form).find('button[type="submit"]');
-                                        var form_result_div = '#form-result';
-                                        $(form_result_div).remove();
-                                        form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                                        var form_btn_old_msg = form_btn.html();
-                                        form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                                        $(form).ajaxSubmit({
-                                            dataType: 'json',
-                                            success: function (data) {
-                                                if (data.status == 'true') {
-                                                    $(form).find('.form-control').val('');
-                                                }
-                                                form_btn.prop('disabled', false).html(form_btn_old_msg);
-                                                $(form_result_div).html(data.message).fadeIn('slow');
-                                                setTimeout(function () {
-                                                    $(form_result_div).fadeOut('slow')
-                                                }, 6000);
-                                            }
-                                        });
-                                    }
-                                });
-                            })(jQuery);
-                        </script>
                     </div>
                 </div>
             </div>
