@@ -9,7 +9,7 @@ class DBController {
     private $conn;
 
     function __construct() {
-        if($_SERVER['SERVER_NAME']=="runtuo.nftprj.com"||$_SERVER['SERVER_NAME']=="www.runtuo.nftprj.com"){
+        if($_SERVER['SERVER_NAME']=="runtuo.hk"||$_SERVER['SERVER_NAME']=="www.runtuo.hk"){
             $this->host = "localhost";
             $this->user = "u727820269_loan_calculato";
             $this->password = "hYfLi*d;u:H8";

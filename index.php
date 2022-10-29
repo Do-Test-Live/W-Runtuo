@@ -54,6 +54,27 @@
     <script src="js/revolution-slider/js/rs6.min.js"></script>
     <script src="js/revolution-slider/extra-rev-slider1.js"></script>
     <style>
+        /* This is to float the social incons to the right */
+        .collapse-social-icons {
+            position: relative;
+            float: right;
+            margin-right: 10px;
+        }
+
+        /* This is to hide the "new" set of icons on big screens */
+        @media only screen and (min-width: 767px) {
+            .collapse-social-icons {
+                display:none !important;
+            }
+        }
+
+        /* This is to hide the "old" set of icons on small screens */
+        @media only screen and (max-width: 767px) {
+            .collapse-social-icons-dropdown {
+                display:none !important;
+            }
+        }
+
         .col-4{
             padding: 3px !important;
         }
@@ -109,6 +130,9 @@
                                                 class="font-current-theme1"
                                         >Run Tuo Finance<br/>
                                             Company Limited
+                                            <br/>
+                                            <a href="apply.php"
+                                               class="text-white" style="font-size: 22px;color: #8cff32 !important;">AI 即時批核</a>
                                         </rs-layer>
                                         <rs-layer
                                                 id="slider-4-slide-19-layer-21"
@@ -131,8 +155,9 @@
                                                 data-frame_1="st:2000;sp:1000;"
                                                 data-frame_999="o:0;st:w;sR:8700;"
                                                 style="z-index:8;"
-                                        ><a href="apply.php"
-                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white">一鍵申請</a>
+                                        >
+                                            <a href="apply.php"
+                                               class="btn btn-flat btn-lg btn-theme-colored1 text-white mt-md-5 mt-3">一鍵申請</a>
                                         </rs-layer>
                                         <rs-layer
                                                 id="slider-4-slide-19-layer-33"
@@ -175,6 +200,9 @@
                                                 class="font-current-theme1"
                                         >Run Tuo Finance<br/>
                                             Company Limited
+                                            <br/>
+                                            <a href="apply.php"
+                                               class="text-white" style="font-size: 22px;color: #8cff32 !important;">AI 即時批核</a>
                                         </rs-layer>
                                         <rs-layer
                                                 id="slider-4-slide-19-layer-21"
@@ -198,7 +226,7 @@
                                                 data-frame_999="o:0;st:w;sR:8700;"
                                                 style="z-index:8;"
                                         ><a href="apply.php"
-                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white">一鍵申請</a>
+                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white mt-md-5 mt-3">一鍵申請</a>
                                         </rs-layer>
                                         <rs-layer
                                                 id="slider-4-slide-19-layer-33"
@@ -241,6 +269,9 @@
                                                 class="font-current-theme1"
                                         >Run Tuo Finance<br/>
                                             Company Limited
+                                            <br/>
+                                            <a href="apply.php"
+                                               class="text-white" style="font-size: 22px;color: #8cff32 !important;">AI 即時批核</a>
                                         </rs-layer>
                                         <rs-layer
                                                 id="slider-4-slide-19-layer-21"
@@ -264,7 +295,7 @@
                                                 data-frame_999="o:0;st:w;sR:8700;"
                                                 style="z-index:8;"
                                         ><a href="apply.php"
-                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white">一鍵申請</a>
+                                            class="btn btn-flat btn-lg btn-theme-colored1 text-white mt-md-5 mt-3">一鍵申請</a>
                                         </rs-layer>
                                         <rs-layer
                                                 id="slider-4-slide-19-layer-33"

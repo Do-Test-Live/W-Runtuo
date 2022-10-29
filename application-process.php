@@ -71,7 +71,32 @@
             document.getElementById('reference_repayment_amount').value = c;
         }
     </script>
+    <style>
+        /* This is to float the social incons to the right */
+        .collapse-social-icons {
+            position: relative;
+            float: right;
+            margin-right: 10px;
+        }
 
+        /* This is to hide the "new" set of icons on big screens */
+        @media only screen and (min-width: 767px) {
+            .collapse-social-icons {
+                display:none !important;
+            }
+        }
+
+        /* This is to hide the "old" set of icons on small screens */
+        @media only screen and (max-width: 767px) {
+            .collapse-social-icons-dropdown {
+                display:none !important;
+            }
+        }
+
+        .col-4{
+            padding: 3px !important;
+        }
+    </style>
 
 </head>
 <body class="tm-container-1300px has-side-panel side-panel-right tm-boxed-layout layer-overlay overlay-dark-9"
