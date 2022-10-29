@@ -1,8 +1,13 @@
+<?php
+session_start();
+require_once("../include/dbController.php");
+$db_handle = new DBController();
+if (isset($_SESSION['userid'])) {
+    header("Location: dashboard.php");
+}?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -50,7 +55,7 @@
                                         <input type="password" name="password" class="form-control form-control-user"
                                                id="exampleInputPassword" placeholder="Password">
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                    <button type="submit" class="btn btn-primary btn-user btn-block" name="sub_log">
                                         Login
                                     </button>
                                 </form>
@@ -77,5 +82,31 @@
 <script src="js/sb-admin-2.min.js"></script>
 
 </body>
+<?php
+if (isset($_POST['sub_log'])) {
+    $email = $db_handle->checkValue($_POST['email']);
+    $password = $db_handle->checkValue($_POST['password']);
 
+    $login = $db_handle->numRows("SELECT * FROM admin_login WHERE email='$email' and password='$password'");
+
+    $login_data = $db_handle->runQuery("SELECT * FROM admin_login WHERE email='$email' and password='$password'");
+
+    if($login==1){
+        $_SESSION['userid']=$login_data[0]["id"];
+        $_SESSION['name']=$login_data[0]["name"];
+
+        ?>
+        <script>
+            window.location.href = "dashboard.php";
+        </script>
+    <?php
+    }else{
+    ?>
+        <script>
+            alert('email address and password wrong!');
+        </script>
+        <?php
+    }
+}
+?>
 </html>

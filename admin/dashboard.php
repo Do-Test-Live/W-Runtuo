@@ -1,3 +1,8 @@
+<?php
+session_start();
+include('../include/dbController.php');
+$db_handle = new DBController();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,9 +47,14 @@
                                 <div class="row no-gutters align-items-center">
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Earnings (Monthly)
+                                            Apply Data
                                         </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            <?php
+                                            $row_count = $db_handle->numRows("SELECT * FROM loan_apply order by id desc");
+                                            echo $row_count;
+                                            ?>
+                                        </div>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -61,9 +71,14 @@
                                 <div class="row no-gutters align-items-center">
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            Earnings (Annual)
+                                            Contact Data
                                         </div>
-                                        <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            <?php
+                                            $row_count = $db_handle->numRows("SELECT * FROM contact order by id desc");
+                                            echo $row_count;
+                                            ?>
+                                        </div>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -108,7 +123,7 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
+                <a class="btn btn-primary" href="logout.php">Logout</a>
             </div>
         </div>
     </div>
