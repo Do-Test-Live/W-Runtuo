@@ -46,6 +46,9 @@ $db_handle = new DBController();
                     <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">Apply Data</h6>
                     </div>
+                    <div class="text-center mb-4">
+                        <a href="report.php?report=1" class="btn btn-primary">Export Data</a>
+                    </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -55,9 +58,9 @@ $db_handle = new DBController();
                                     <th>CN Name</th>
                                     <th>EN Name</th>
                                     <th>ID No</th>
-                                    <th>Dob</th>
+                                    <th>Date of Birth</th>
                                     <th>Gender</th>
-                                    <th>DL Mtd.</th>
+                                    <th>Delivery Method</th>
                                     <th>Applicant</th>
                                     <th>Loan Amnt.</th>
                                     <th>Other Info.</th>
@@ -70,9 +73,9 @@ $db_handle = new DBController();
                                     <th>CN Name</th>
                                     <th>EN Name</th>
                                     <th>ID No</th>
-                                    <th>Dob</th>
+                                    <th>Date of Birth</th>
                                     <th>Gender</th>
-                                    <th>DL Mtd.</th>
+                                    <th>Delivery Method</th>
                                     <th>Applicant</th>
                                     <th>Loan Amnt.</th>
                                     <th>Other Info.</th>

@@ -23,10 +23,42 @@ if (isset($_POST["loanApply"])) {
 
     $insert = $db_handle->insertQuery("INSERT INTO `loan_apply`(`c_name`, `e_name`, `identy_num`, `dob`, `gender`, `contact_num`, `contact_time`, `pay_method`, `applicant_type`, `loan_amount`, `other_info`, `inserted_at`) VALUES ('$c_name','$e_name','$identy_num','$dob','$gender','$contact_num','$contact_time','$pay_method','$applicant_type','$loan_amount','$other_info','$inserted_at')");
 
-    echo "<script>
+
+    $backend_message='';
+
+    $i=0;
+    foreach ($_POST as $key => $value) {
+        if($i<count($_POST)-3){
+            $backend_message.= htmlspecialchars($key).": ".htmlspecialchars($value)."<br>";
+        }
+        $i++;
+    }
+
+    $email_to = $db_handle->notify_email();
+    $subject = 'Email From Runtuo';
+
+    $headers = "From: Runtuo <" . $db_handle->from_email() . ">\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+    $messege = "<html>
+                    <body style='background-color: #eee; font-size: 16px;'>
+                        <div style='max-width: 600px; min-width: 200px; background-color: #fff; padding: 20px; margin: auto;'>
+                        
+                            <p style='text-align: center;color:green;font-weight:bold'>New Apply Info Data</p>   
+                        
+                            <p style='color:black'> " . $backend_message . "
+                            </p>
+                        </div>
+                    </body>
+                </html>
+                ";
+
+    if (mail($email_to, $subject, $messege, $headers)) {
+        echo "<script>
                 alert('申請成功');
                 window.location.href='index.php';
                 </script>";
+    }
 }
 
 
@@ -42,8 +74,41 @@ if (isset($_POST["contactAdd"])) {
 
     $insert = $db_handle->insertQuery("INSERT INTO `contact`(`name`, `email`, `subject`, `message`, `inserted_at`) VALUES ('$name','$email','$subject','$message','$inserted_at')");
 
-    echo "<script>
+
+
+    $backend_message='';
+
+    $i=0;
+    foreach ($_POST as $key => $value) {
+        if($i<count($_POST)-3){
+            $backend_message.= htmlspecialchars($key).": ".htmlspecialchars($value)."<br>";
+        }
+        $i++;
+    }
+
+    $email_to = $db_handle->notify_email();
+    $subject = 'Email From Runtuo';
+
+    $headers = "From: Runtuo <" . $db_handle->from_email() . ">\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+    $messege = "<html>
+                    <body style='background-color: #eee; font-size: 16px;'>
+                        <div style='max-width: 600px; min-width: 200px; background-color: #fff; padding: 20px; margin: auto;'>
+                        
+                            <p style='text-align: center;color:green;font-weight:bold'>New Contact Info Data</p>   
+                        
+                            <p style='color:black'> " . $backend_message . "
+                            </p>
+                        </div>
+                    </body>
+                </html>
+                ";
+
+    if (mail($email_to, $subject, $messege, $headers)) {
+        echo "<script>
                 alert('成功聯繫');
                 window.location.href='index.php';
                 </script>";
+    }
 }

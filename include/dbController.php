@@ -12,7 +12,7 @@ class DBController {
         if($_SERVER['SERVER_NAME']=="runtuo.hk"||$_SERVER['SERVER_NAME']=="www.runtuo.hk"){
             $this->host = "localhost";
             $this->user = "u727820269_loan_calculato";
-            $this->password = "hYfLi*d;u:H8";
+            $this->password = "*Qx9m+af90";
             $this->database = "u727820269_loan_calculato";
         }
 
